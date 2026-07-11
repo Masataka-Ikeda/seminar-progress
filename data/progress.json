@@ -1,1 +1,138 @@
+{
+  "seminar": "8月ゼミ",
+  "totalSessions": 13,
+  "generatedAt": "2026-07-11T04:18:00Z",
+  "sessions": [
+    {
+      "sessionNumber": 1,
+      "date": "2026-08-01",
+      "checked": true,
+      "attendees": 18,
+      "expectedAttendees": 20,
+      "completionRate": 0.90,
+      "transitionRate": 0.00,
+      "notes": "導入とオリエンテーション"
+    },
+    {
+      "sessionNumber": 2,
+      "date": "2026-08-03",
+      "checked": true,
+      "attendees": 17,
+      "expectedAttendees": 20,
+      "completionRate": 0.85,
+      "transitionRate": 0.06,
+      "notes": "課題Aの説明"
+    },
+    {
+      "sessionNumber": 3,
+      "date": "2026-08-05",
+      "checked": false,
+      "attendees": 0,
+      "expectedAttendees": 20,
+      "completionRate": 0.00,
+      "transitionRate": 0.00,
+      "notes": "未実施"
+    },
+    {
+      "sessionNumber": 4,
+      "date": "2026-08-07",
+      "checked": true,
+      "attendees": 16,
+      "expectedAttendees": 20,
+      "completionRate": 0.80,
+      "transitionRate": -0.06,
+      "notes": "中間レビュー"
+    },
+    {
+      "sessionNumber": 5,
+      "date": "2026-08-09",
+      "checked": true,
+      "attendees": 19,
+      "expectedAttendees": 20,
+      "completionRate": 0.95,
+      "transitionRate": 0.19,
+      "notes": "ゲスト講演"
+    },
+    {
+      "sessionNumber": 6,
+      "date": "2026-08-11",
+      "checked": true,
+      "attendees": 18,
+      "expectedAttendees": 20,
+      "completionRate": 0.90,
+      "transitionRate": -0.05,
+      "notes": "ワークショップ"
+    },
+    {
+      "sessionNumber": 7,
+      "date": "2026-08-13",
+      "checked": false,
+      "attendees": 0,
+      "expectedAttendees": 20,
+      "completionRate": 0.00,
+      "transitionRate": 0.00,
+      "notes": "未実施"
+    },
+    {
+      "sessionNumber": 8,
+      "date": "2026-08-15",
+      "checked": true,
+      "attendees": 20,
+      "expectedAttendees": 20,
+      "completionRate": 1.00,
+      "transitionRate": 1.00,
+      "notes": "中間発表"
+    },
+    {
+      "sessionNumber": 9,
+      "date": "2026-08-17",
+      "checked": true,
+      "attendees": 19,
+      "expectedAttendees": 20,
+      "completionRate": 0.95,
+      "transitionRate": -0.05,
+      "notes": "フィードバック"
+    },
+    {
+      "sessionNumber": 10,
+      "date": "2026-08-19",
+      "checked": true,
+      "attendees": 18,
+      "expectedAttendees": 20,
+      "completionRate": 0.90,
+      "transitionRate": -0.05,
+      "notes": "実践演習"
+    },
+    {
+      "sessionNumber": 11,
+      "date": "2026-08-21",
+      "checked": true,
+      "attendees": 17,
+      "expectedAttendees": 20,
+      "completionRate": 0.85,
+      "transitionRate": -0.06,
+      "notes": "個別相談"
+    },
+    {
+      "sessionNumber": 12,
+      "date": "2026-08-23",
+      "checked": true,
+      "attendees": 18,
+      "expectedAttendees": 20,
+      "completionRate": 0.90,
+      "transitionRate": 0.06,
+      "notes": "最終準備"
+    },
+    {
+      "sessionNumber": 13,
+      "date": "2026-08-25",
+      "checked": false,
+      "attendees": 0,
+      "expectedAttendees": 20,
+      "completionRate": 0.00,
+      "transitionRate": 0.00,
+      "notes": "最終発表予定"
+    }
+  ]
+}
 
