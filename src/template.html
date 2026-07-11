@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>8月ゼミ 進捗ダッシュボード</title>
+<style>
+/* 必要なスタイルをここに（先ほどのテンプレートの CSS を流用可） */
+</style>
+</head>
+<body>
+  <div id="app">読み込み中…</div>
+
+  <!-- ビルド時にここに JSON が埋め込まれる -->
+  <script id="progress-data" type="application/json">
+  __INJECT_DATA__
+  </script>
+
+  <script>
+  // ページ側のレンダリングロジック（簡易）
+  (function(){
+    const raw = document.getElementById('progress-data').textContent;
+    let data;
+    try { data = JSON.parse(raw); } catch(e) { document.getElementById('app').textContent = 'データ読み込みエラー'; return; }
+    // ここに描画ロジックを入れる（テーブル生成やグラフ描画）
+    const el = document.getElementById('app');
+    el.innerHTML = '<h1>' + (data.seminar || 'ゼミ') + ' 進捗</h1>';
+    // 例：簡易テーブル
+    const tbl = document.createElement('table');
+    tbl.border = 1;
+    const header = tbl.insertRow();
+    ['回','日付','実施','参加/想定','完了率','遷移率','メモ'].forEach(h => { const th = document.createElement('th'); th.textContent = h; header.appendChild(th); });
+    (data.sessions || []).forEach(s => {
+      const r = tbl.insertRow();
+      r.insertCell().textContent = s.sessionNumber;
+      r.insertCell().textContent = s.date || '-';
+      r.insertCell().textContent = s.checked ? '実施済' : '未実施';
+      r.insertCell().textContent = (s.attendees ?? '-') + ' / ' + (s.expectedAttendees ?? '-');
+      r.insertCell().textContent = (typeof s.completionRate === 'number') ? Math.round(s.completionRate*100) + '%' : '-';
+      r.insertCell().textContent = (typeof s.transitionRate === 'number') ? (s.transitionRate>0?'+':'') + Math.round(s.transitionRate*100) + '%' : '-';
+      r.insertCell().textContent = s.notes || '';
+    });
+    el.appendChild(tbl);
+  })();
+  </script>
+</body>
+</html>
